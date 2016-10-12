@@ -1,0 +1,37 @@
+@import url(base.css);
+/*banner 开始*/
+.banner{
+     height: auto;
+     min-width: 970px;
+     border:5px solid #ccc;
+}
+.banner:after{
+	content: "";
+	height: 0;
+	width: 0;
+	clear: both;
+}
+.banner-left{
+	width: 60%;
+	height: auto;
+	float: left;
+}
+.banner-left img{
+	width: 100%;
+	line-height: 0;
+}
+.banner-right{
+	width: 40%;
+	float: left;
+}
+.banner-right img:nth-child(1){
+	width: 100%;
+	line-height: 0;
+}
+.banner-right img:nth-child(2){
+	width: 50%;
+	float: left;
+}
+.banner-right img:nth-child(3){
+	width: 50%;
+}
