@@ -2,36 +2,248 @@
 /*banner 开始*/
 .banner{
      height: auto;
-     min-width: 970px;
-     border:5px solid #ccc;
+     min-width: 955px;
+     overflow: hidden;
 }
+.banner img{
+	display: block;line-height: 0;
+}
+
 .banner:after{
 	content: "";
 	height: 0;
 	width: 0;
+	display: block;
 	clear: both;
 }
 .banner-left{
 	width: 60%;
 	height: auto;
 	float: left;
+/*	position: relative;*/
+	overflow: hidden;
 }
+.image-list{
+	width: 100%;
+	overflow: hidden;
+}
+.image-list:hover img{
+	display: block;
+	width: 100%;
+	transform:scale(1.2,1.2);
+}
+/*.images{
+	width: 200%;
+	height: auto;
+}*/
 .banner-left img{
 	width: 100%;
-	line-height: 0;
+	float: left;
+	display: inline-block;
+	overflow: hidden;
+	transition:all 2s ease-out;
 }
 .banner-right{
 	width: 40%;
+	float: right;
+}
+.banner-right a{
+	display: block;
+}
+.banner-right a:nth-child(1){
+   width: 100%;
+}
+.image-list2{
+	overflow: hidden;
+}
+.image-list2:hover img{
+
+	transform:scale(1.2,1.2);
+}
+.image-list3{
+	width: 50%;
+	float: left;
+	overflow: hidden;
+}
+.image-list3:hover img{
+
+	transform:scale(1.2,1.2);
+}
+.banner-right a:nth-child(2){
+	width: 50%;
+	float: left;
+}
+.banner-right a:nth-child(3){
+	width: 50%;
 	float: left;
 }
 .banner-right img:nth-child(1){
 	width: 100%;
-	line-height: 0;
+	transition:all 2s ease-out;
 }
 .banner-right img:nth-child(2){
 	width: 50%;
-	float: left;
+	transition:all 2s ease-out;
 }
 .banner-right img:nth-child(3){
 	width: 50%;
+	transition:all 2s ease-out;
+}
+
+/*main1 开始*/
+.fl{
+	float: left;
+    margin-right: 25px;
+}
+.fr{
+	float: right;	
+}
+.main1-box{
+	margin: 40px auto;
+	padding-bottom: 40px;
+	border-bottom: 1px solid #ccc;
+}
+.main1-left{
+	width: 220px;
+	height: 540px;
+
+}
+.main1-right div{
+	float: left;
+	position: relative;
+}
+.main1-right img{
+	width: 138px;
+	height: 138px;
+	position: absolute;
+	right: 14px;
+	bottom: 16px;
+    }
+#bt{
+	font-size: 16px;
+	line-height: 24px;
+	text-align: left;
+	color: rgb(51,51,51);
+}
+#xbt{
+	margin-top: 5px;
+	color: rgb(153,153,153);
+	font-size: 12px;
+	text-align: left;
+}
+#jiaqian{
+	margin-top: 11px;
+	margin-left: -5px;
+	margin-bottom:2px;
+	font-size: 16px;
+	text-align: left;
+	color: rgb(51,51,51);
+	font-weight: 700;
+}
+#remai{
+	color:#fff;
+	width: 28px;
+	height: 18px;
+	padding: 0 10px;
+	font-size: 12px;
+	line-height: 18px;
+	background: rgb(238,53,49);
+}
+#bt:hover{
+	text-decoration: underline;
+}
+
+@media screen and (min-width: 1200px){
+    .main1-box{
+    	width: 1200px;
+    	height: 540px;
+    }
+    .main1-right{
+	width: 955px;
+	height: 540px;
+    }
+    .main1-right div:nth-child(2){
+		width: 426px;
+		height: 500px;
+		border-left: 1px solid #ccc;
+		border-right: 1px solid #ccc;
+		padding: 20px 25px 20px 25px;
+	}
+	.main1-right div:nth-child(2) img{
+		width: 395px;
+		height: 398px;
+	}
+    .main1-right div:nth-child(2) #bt{
+    	font-size: 24px;
+    }
+    .main1-right div:nth-child(2) #xbt{
+    	font-size: 14px;
+    }
+    .main1-right div:nth-child(2) #jiaqian{
+    	font-size: 22px;
+    }
+   .main1-right div:nth-child(1){
+    	height: 229px;
+    	border-bottom: 1px solid #ccc; 
+    }
+    .main1-right div:nth-child(3){
+    	height: 229px;
+    	border-bottom:1px solid #ccc; 
+    }
+    .main1-right div:nth-child(4){
+    	margin-left: -954px;
+    	margin-top: 269px;
+    }
+    .main1-right div{
+    	width: 198px;
+    	height: 230px;
+    	padding: 20px 20px 20px 20px;
+    }
+    .main1-right div:nth-child(6){
+    	display: none;
+    }
+
+}
+@media screen and (max-width:1200px){
+	.main1-box{
+		width:955px;
+		height: 540px; 
+	}
+	.main1-right{
+		width: 710px;
+		height: 540px;
+	}
+	.main1-right div:nth-child(2){
+		width: 183px;
+		height: 229px;
+		border-left: 1px solid #ccc;
+		border-right: 1px solid #ccc;
+		border-bottom: 1px solid #ccc;
+		padding: 20px 25px 20px 25px;
+	}
+    .main1-right div{
+    	width: 201px;
+    	height: 229px;
+    	padding:20px 17px 20px 17px;
+    }
+   .main1-right div:nth-child(1){
+    	border-bottom: 1px solid #ccc; 
+    }
+    .main1-right div:nth-child(3){
+    	border-bottom:1px solid #ccc; 
+    }
+    .main1-right div:nth-child(4){
+    	height: 230px;
+    }
+    .main1-right div:nth-child(5){
+    	width: 199px;
+    	height: 230px;
+    	border-left:1px solid #ccc; 
+    	border-right: 1px solid #ccc;
+    }
+    .main1-right div:nth-child(6){
+    	height: 230px;
+    }
+
+
 }
