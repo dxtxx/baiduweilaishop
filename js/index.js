@@ -14,4 +14,24 @@ $(function(){
 	// imgs1.hover(function(){
 	// 	imgs1.eq(imgs1.index(this)).animate({width:'110%'},1000)
 	// })
+    
+    //banner轮播
+    var imag_box=$('.images');
+    var banner=$('.banner-left');
+    var x=$('.image-list').width();
+    var b=$('.image-list');
+    var t=setInterval(move,2000);
+    var i=0;
+    function move(){
+    	i++;
+    	if (i==b.length) {
+    		i=0;
+    	}
+    	imag_box.animate({left:x*-i},1000)
+    }
+    banner.hover(function(){
+    	clearInterval(t)
+    },function(){
+    	t=setInterval(move,2000)
+    })
 })
